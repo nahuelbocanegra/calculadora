@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --text:#eeeeee;
+    --fond:#4C0033;
+    --fondCalc:#790252;
+    --bottonCalc:#AF0171;
+    --specialBotton:#ff00a6;
+
+}
+.Ligth{
+    --text:rgba(0, 0, 0, 0.928);
+    --fond:#DEF5E5;
+    --fondCalc:#BCEAD5;
+    --bottonCalc:#9ED5C5;
+    --specialBotton:#5cd2a7;
+}
+.App{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fond);
+    transition: background-color 1s ease-in-out;
+ 
+}
+.calculadora{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: var(--fondCalc);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.68);
+    position: relative;
+    transition: background-color 1s ease-in-out;
+}
+.cal-fun{
+    display: grid;
+    grid-template-areas:
+    "division multiplicacion suma resta"
+    "siete ocho nueve punto"
+   "cuatro cinco seis igual"
+   "uno dos tres igual"
+   "borrar borrar cero igual";
+   gap:5px;
+   padding: 10px;
+
+}
+.data{
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px rgba(12, 0, 0, 0.802);
+    background-color: var(--bottonCalc);
+    color: var(--text);
+    font-weight: 500;
+    transition: background-color 1s ease-in-out;
+}
+.borrar,
+.igual{
+    background-color: var(--specialBotton);
+ 
+}
+.data:hover{
+    background-color: #EBC7E6;
+}
+.uno{
+grid-area:uno
+}
+.dos{
+grid-area:dos;
+}
+.tres{
+grid-area:tres;
+}
+.cuatro{
+grid-area:cuatro;
+}
+.cinco{
+grid-area:cinco;
+}
+.seis{
+grid-area:seis;
+}
+.siete{
+grid-area:siete;
+}
+.ocho{
+grid-area:ocho;
+}
+.nueve{
+grid-area:nueve;
+}
+.cero{
+grid-area:cero;
+}
+.igual{
+grid-area:igual;
+}
+.multi{
+grid-area:multiplicacion;
+}
+.resta{
+grid-area:resta;
+}
+.suma{
+grid-area:suma;
+}
+.division{
+grid-area:division;
+}
+.punto{
+grid-area:punto;
+}
+.borrar{
+   grid-area:borrar;
+}
+.tv{
+    padding: 10px;
+}
+.div-tv{
+    height: 100%;
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgb(12, 0, 0);
+    text-align: end;
+    padding: 10px;
+    font-size: 2rem;
+    border: 0;
+}
+.tema{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    box-shadow: 2px 2px 8px black;
+    
+}
+
+
+input:focus
+input:active
+button:active
+button:focus{
+    outline: none;
+}
